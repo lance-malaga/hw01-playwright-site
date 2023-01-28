@@ -1,14 +1,58 @@
 .main {
-  
+	height: 100vh;
+	background: url('/background-images/backgroundMountain.jpg') no-repeat center ;
+	background-size: cover;
+	padding-top: 40px;
+	color: var(--white-text);
+}
+.main > * {
+	margin: 0 100px;
+}
+.main__content {
+	max-width: 435px;
+	margin-top: 250px;
+	margin-left: 200px;
+}
+.main__content hr {
+	margin: 20px 0;
+	border: none;
+	border-bottom: 3px solid var(--tan-border);
+	width: 70%;
+}
+.main__content_buttons {
+	display: flex;
+	gap: 10px;
+}
+.main__content button {
+	font-family: var(--font);
+	color: var(--white-text);
+	border: 2px solid var(--white-text);
+	border-radius: 5px;
+	background-color: transparent;
+	margin: 20px 0 0;
+	padding: 5px 15px;
+}
+.main__content button:hover {
+	color: var(--black-text);
+	background-color: var(--white-text);
+}
+.down_arrow {
+	position: absolute;
+	right: 0;
+	margin: 0 100px;
 }
 
-
-/* Mobile */
-@media (max-width: 700px) {
-  
+/* Bigger Destop */
+@media screen and (min-width: 1600px){
+	.main__content {
+		max-width: 550px;
+	}
 }
-
 /* Tablet and Smaller Desktop */
-@media (min-width: 701px) and (max-width: 1120px) {
+@media (min-width: 601px) and (max-width: 1000px) {
+  
+}
+/* Mobile */
+@media (max-width: 600px) {
   
 }
