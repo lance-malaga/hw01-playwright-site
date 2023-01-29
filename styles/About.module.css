@@ -1,0 +1,46 @@
+.about_page {
+	background-color: var(--quarternary-color);
+	padding-top: 40px;
+	color: var(--primary-color);
+}
+.about_page > * {
+	margin: 0 100px;
+}
+.main__content {
+    padding: 80px 50px;
+}
+.main__content h1 {
+    text-align: center;
+    position: relative;
+}
+.main__content h1::before {
+    content: "";
+    display: block;
+    border: 1.5px solid var(--secondary-color);
+    width: 35%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+.main__content h1::after {
+    content: "";
+    display: block;
+    border: 1.5px solid var(--secondary-color);
+    width: 35%;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+.about_us__content {
+    margin: 80px auto;
+    width: 60%;
+}
+.about_us__content > * {
+    margin: 20px 0;
+}
+.about_us__content li {
+    list-style: none;
+}
+.departments {
+    width: fit-content;
+}
