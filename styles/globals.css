@@ -1,14 +1,9 @@
 :root {
+  /* sizes */
   --max-width: 1680px;
-  --border-radius: 12px;
 
   /* font styles */
   --font: 'Open Sans', sans-serif;;
-
-  /* colors */
-  --white-text: #f5f5f5;
-  --tan-border: #f7dcbd;
-  --black-text: #131313;
 }
 
 * {
@@ -20,11 +15,6 @@
 html,
 body {
   font-family: var(--font);
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  
 }
 
 a {
