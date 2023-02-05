@@ -23,16 +23,20 @@ export default function NavArrows({
                     </span>
                 </Link>
             )}
-            <Link href={linkArrowDown}>
-                <span>
-                    <Image
-                        src={down_arrow}
-                        alt={"down_arrow"}
-                        height={40}
-                        width={"auto"}
-                    />
-                </span>
-            </Link>
+            {
+                linkArrowDown && (
+                    <Link href={linkArrowDown}>
+                        <span>
+                            <Image
+                                src={down_arrow}
+                                alt={"down_arrow"}
+                                height={40}
+                                width={"auto"}
+                            />
+                        </span>
+                    </Link>
+                )
+            }
         </div>
     )
 }
