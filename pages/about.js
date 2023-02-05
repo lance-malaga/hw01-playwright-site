@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "@/styles/About.module.css"
 // components
 import Header from "@/components/Header";
@@ -10,8 +9,8 @@ export default function About() {
     return (
         <>
             <Header
-                title='About'
-                meta_content='Assignment #1 - About Us Page'
+                title='About Us'
+                metaContent='Assignment #1 - About Us Page'
             />
             <div className={styles.about_page}>
                 <NavBar/>
