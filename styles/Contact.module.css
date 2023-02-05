@@ -1,0 +1,126 @@
+.contact_page {
+	height: 100vh;
+	background: url('/background-images/backgroundMountainUpsideDown.jpg') no-repeat center ;
+	background-size: cover;
+	padding-top: 40px;
+	color: var(--primary-color);
+}
+.contact_page > * {
+	margin: 0 100px;
+}
+.main__content {
+    padding: 80px 50px;
+}
+.main__content h1 {
+    text-align: center;
+    position: relative;
+}
+.main__content h1::before {
+    content: "";
+    display: block;
+    border: 1.5px solid var(--secondary-color);
+    width: 35%;
+    left: 0;
+    top: 50%;
+    position: absolute;
+}
+.main__content h1::after {
+    content: "";
+    display: block;
+    border: 1.5px solid var(--secondary-color);
+    width: 35%;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+.main__content > p {
+    text-align: center;
+    margin: 100px 50px 50px;
+}
+.form__container {
+    width: 60%;
+    margin: 0 auto 15px;
+}
+.form__container button {
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    color: var(--primary-color);
+    background-color: transparent;
+    margin: 15px 0 0 auto;
+    width: fit-content;
+}
+.form__container button:hover {
+    background-color: var(--primary-color);
+    color: var(--quinary-color);
+}
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fieldset {
+    padding: 20px;
+    border: 1px solid var(--quinary-color);
+}
+.table {
+    width: 100%;
+    position: relative;
+}
+.table__row_top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px 3px;
+}
+.table__row_bottom {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+    margin-top: 5px;
+}
+.label {
+    font-weight: bold;
+}
+.input {
+    border: none;
+    border-radius: 0;
+    padding: 2px;
+}
+.form__validation {
+    color: darkred;
+    text-align: left;
+    width: 100%;
+    margin: 10px 0;
+}
+
+@media (max-width: 601px) and (max-width: 1000px) {
+	.contact_page {
+		padding-top: 70px;
+	}
+	.contact_page > * {
+		margin: 0 70px;
+	}
+	.main__content {
+		padding: 80px 0;
+	}
+    .main__content h1::before,
+    .main__content h1::after {
+        width: 30%;
+    }
+    .form__container {
+        width: 100%;
+    }
+}
+/* Mobile */
+@media (max-width: 600px) {
+    .contact_page > * {
+		margin: 0 40px;
+	}
+	.main__content > h1 {
+		font-size: 24px;
+	}
+    .main__content h1::before,
+    .main__content h1::after {
+        width: 25%;
+    }
+}
