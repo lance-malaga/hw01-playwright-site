@@ -13,7 +13,7 @@ export default function Home() {
         <>
         <Header
             title='Home'
-            meta_content='Assignment #1 - Home Page'
+            metaContent='Assignment #1 - Home Page'
         />
         <div className={styles.home_page}>
             <NavBar/>
